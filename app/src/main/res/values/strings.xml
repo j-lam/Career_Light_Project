@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Career_Light_Project</string>
+    <string name="app_name">Career Light</string>
+    <string name="Calendar">Calendar</string>
+    <string name="Chat">Chat</string>
+    <string name="Workshop">Workshop</string>
+    <string name="Resource">Resource</string>
+    <string name="Courses">Courses</string>
+    <string name="Setting">Setting</string>
 </resources>
