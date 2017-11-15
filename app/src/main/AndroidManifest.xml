@@ -16,7 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity android:name=".StartActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalendarActivity"
+=======
         <activity android:name=".ChatActivity"
+>>>>>>> 40fa73eef59e8d5ad71325fd957bceb7bbe6f47f
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
 
@@ -41,8 +55,15 @@
 
         <activity android:name=".SettingActivity"
             android:parentActivityName=".MainActivity"
+<<<<<<< HEAD
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity"></activity>
+
+=======
             android:screenOrientation="portrait">
         </activity>
+>>>>>>> 40fa73eef59e8d5ad71325fd957bceb7bbe6f47f
     </application>
 
-</manifest>
+    </manifest>
+
