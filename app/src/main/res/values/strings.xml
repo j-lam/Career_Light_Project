@@ -6,6 +6,7 @@
     <string name="Resource">Resource</string>
     <string name="Courses">Courses</string>
     <string name="Setting">Setting</string>
+<<<<<<< HEAD
     <string name="login">Login</string>
     <string name="create_a_new_account">Create an Account</string>
     <string name="display_name">Display Name</string>
@@ -47,4 +48,6 @@
     <string name="material_calendar_positive_button">OK</string>
     <string name="material_calendar_negative_button">Cancel</string>
 
+=======
+>>>>>>> 40fa73eef59e8d5ad71325fd957bceb7bbe6f47f
 </resources>
