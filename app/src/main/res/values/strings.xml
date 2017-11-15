@@ -6,4 +6,18 @@
     <string name="Resource">Resource</string>
     <string name="Courses">Courses</string>
     <string name="Setting">Setting</string>
+    <string name="login">Login</string>
+    <string name="create_a_new_account">Create an Account</string>
+    <string name="display_name">Display Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="logout">Logout</string>
+    <string name="already_have_account">Already have account</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="your_email">Your Email</string>
+
+
+
+
 </resources>

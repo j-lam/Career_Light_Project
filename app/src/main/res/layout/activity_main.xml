@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jenniferlam.career_light_project.MainActivity">
-
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#D3D3D3">
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_page_toolbar" />
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:paddingTop="10dp"
+        android:text="CareerLight"
+        android:textAlignment="center"
+        android:textSize="36sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/main_btn_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_calendar_logo"
+            android:onClick="onButtonClicker"
+            android:text="Calendar" />
+
+        <Button
+            android:id="@+id/main_btn_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_chat_logo"
+            android:onClick="onButtonClicker"
+            android:text="Chat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_workshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_workshop_logo"
+            android:onClick="onButtonClicker"
+            android:text="Workshop" />
+
+        <Button
+            android:id="@+id/main_btn_resource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_resource_logo"
+            android:onClick="onButtonClicker"
+            android:text="Resource" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_course_logo"
+            android:onClick="onButtonClicker"
+            android:text="Courses" />
+
+        <Button
+            android:id="@+id/main_btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/android_setting_logo"
+            android:onClick="onButtonClicker"
+            android:text="Setting" />
+    </LinearLayout>
+</LinearLayout>
+
