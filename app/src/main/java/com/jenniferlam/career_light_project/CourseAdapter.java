@@ -12,11 +12,11 @@ import java.util.List;
  * Created by kennyquach on 11/7/17.
  */
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ContactViewHolder>  {
+public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ContactViewHolder> {
 
-    private List<CourseActivity.CourseInfo> courses;
+    private List<CourseInfo> courses;
 
-    public RecyclerViewAdapter(List<CourseActivity.CourseInfo> courses){
+    public CourseAdapter(List<CourseInfo> courses) {
 
         this.courses = courses;
     }
@@ -26,14 +26,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public ContactViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View itemView = LayoutInflater.
                 from(viewGroup.getContext()).
-                inflate(R.layout.card_view, viewGroup, false);
+                inflate(R.layout.course_card_view, viewGroup, false);
 
         return new ContactViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(ContactViewHolder holder, int position) {
-        CourseActivity.CourseInfo courseInfo = courses.get(position);
+        CourseInfo courseInfo = courses.get(position);
         holder.cName.setText(courseInfo.courseName);
         holder.cDate.setText(courseInfo.courseDate);
         holder.cTime.setText(courseInfo.courseTime);
@@ -51,14 +51,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         protected TextView cDate;
         protected TextView cTime;
         protected TextView cAttending;
+        protected TextView cSeeMore;
 
         public ContactViewHolder(View v) {
             super(v);
-            cName =  (TextView) v.findViewById(R.id.course_title);
-            cDate = (TextView)  v.findViewById(R.id.course_date);
-            cTime = (TextView)  v.findViewById(R.id.course_time);
+            cName = (TextView) v.findViewById(R.id.course_title);
+            cDate = (TextView) v.findViewById(R.id.course_date);
+            cTime = (TextView) v.findViewById(R.id.course_time);
             cAttending = (TextView) v.findViewById(R.id.course_attending);
+            cSeeMore = (TextView) v.findViewById(R.id.see_more);
         }
     }
 
 }
+
